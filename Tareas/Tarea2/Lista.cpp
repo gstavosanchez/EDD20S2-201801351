@@ -110,6 +110,23 @@ Nodo* Lista::getNodo(int index) {
 		return buscado;
 	}
 
+
+
+}
+
+
+Lista* Lista::clonar(){
+
+	int contador = 0;
+	Lista* listAux = new Lista();
+	while(contador < getSize()){
+		Persona* nuevo = getNodo(contador)->getElemento();
+		listAux->add(nuevo);
+		contador++;
+	}
+
+
+	return listAux;
 }
 
 void Lista::remove(string _carnet) {
@@ -162,3 +179,4 @@ Lista::~Lista() {
 	}
 	cabeza = NULL;
 }
+

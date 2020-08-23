@@ -24,7 +24,7 @@ public:
 	void remove(string);
 	int indexOf(string);
 	Nodo* getNodo(int);
-
+	Lista* clonar();
 
 
 
