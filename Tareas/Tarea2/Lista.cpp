@@ -117,17 +117,20 @@ Nodo* Lista::getNodo(int index) {
 
 Lista* Lista::clonar(){
 
-	int contador = 0;
-	Lista* listAux = new Lista();
-	while(contador < getSize()){
-		Persona* nuevo = getNodo(contador)->getElemento();
-		listAux->add(nuevo);
-		contador++;
+	int contador = 0; //Constante = 0
+	Lista* listAux = new Lista(); // Constante
+	while(contador < getSize()){ // Bucle hasta getSize()
+		Persona* nuevo = getNodo(contador)->getElemento(); // Constante de persona
+		listAux->add(nuevo); //  Constnte 
+		contador++; //Constante = 1
 	}
 
-
-	return listAux;
+	return listAux;//constante 
+	
 }
+
+//// T(n) = 0 + 0 +n + 1
+/// T(n) = n
 
 void Lista::remove(string _carnet) {
 	int buscado = indexOf(_carnet);
