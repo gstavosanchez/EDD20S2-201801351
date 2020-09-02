@@ -1,9 +1,7 @@
-#ifndef Nodo_H
-#define Nodo_H
+#pragma once
 #include<iostream>
 #include<stdlib.h>
 #include "Estudiante.h"
-
 
 using namespace std;
 
@@ -23,4 +21,3 @@ public:
 
 };
 
-#endif // !Nodo
